@@ -41,9 +41,9 @@ Comments describe what function does
 //EFFECTS: returns the sum of the numbers in v
 double sum( std::vector<double> v );
 ```
-* functions with REQUIRES clauses are called partial
+* functions with REQUIRES clauses are called ***partial***
 
-* functions without REQUIRES clause are called complete
+* functions without REQUIRES clause are called ***complete***
 
 ### MODIFIES - How inputs / global vars are modified
 
