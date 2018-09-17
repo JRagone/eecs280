@@ -65,13 +65,13 @@ Don't confuse the ***dereference*** operator with a ***pointer type***
 #### Examples
 
 ``` cpp
-int x = 7;		// x is a variable whose type is int
+int x = 7;	// x is a variable whose type is int
 
 int *p = &x; 	// p is a variable whose type is
-				// pointer-to-int
+		// pointer-to-int
 				
-cout << *p;		// The dereference operator retrieves the
-				// object it points to. Prints 7.
+cout << *p;	// The dereference operator retrieves the
+		// object it points to. Prints 7.
 ```
 
 ``` cpp
@@ -129,7 +129,7 @@ The value of an array variable is the ***address of the first element***
 Since an arrray is contiguous, the address of the first element is all you need
 
 ``` cpp
-int array_max( int *a )	// Might as well pass it as an int *
+int array_max( int *a )		// Might as well pass it as an int *
 	{
 	cout << a; //0x804240c0
 	//...
