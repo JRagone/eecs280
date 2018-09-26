@@ -60,10 +60,10 @@ char s[ ] = "hello";
 ## `const` keyword
 
 ``` cpp
-const T *p;			// T, the object p points to,
-						// cannot be changed.
-T *const p;			// The pointer p cannot be
-						// changed
+const T *p;		// T, the object p points to,
+			// cannot be changed.
+T *const p;		// The pointer p cannot be
+			// changed
 const T *const p;	// Neither T nor p can be changed
 ```
 
