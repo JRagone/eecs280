@@ -186,19 +186,19 @@ const int MaxSize = 10;
 
 int main( )
 	{
-	MaxSize = 7;	// Error: MaxSize
+	MaxSize = 7;			// Error: MaxSize
 					// is read-only
-	char str[ MaxSize ] = "hello"; // OK
+	char str[ MaxSize ] = "hello";	// OK
 	}
 ```
 
 The ***value of the pointer*** and the ***value of the object to which the pointer points*** can be made constant
 
 ``` cpp
-const T *p;			// "T" (the pointed-to object)
-						// cannot be changed
-T *const p;			// "p" (the pointer) cannot be
-						// changed
+const T *p;		// "T" (the pointed-to object)
+			// cannot be changed
+T *const p;		// "p" (the pointer) cannot be
+			// changed
 const T *const p;	// neither can be changed
 ```
 
@@ -211,14 +211,14 @@ The following parameters are identical
 ``` cpp
 int strlen( char const *s )
 	{
-	s += 1;	//OK
+	s += 1;		//OK
 	*s = 'j';	//error
 	//...
 	}
 	
 int strlen( const char *s )
 	{
-	s += 1;	//OK
+	s += 1;		//OK
 	*s = 'j';	//error
 	//...
 	}
@@ -233,7 +233,7 @@ The value of the pointer, however, is not constant, and is open to modification.
 ``` cpp
 int strlen( char *const s )
 	{
-	s += 1;	//error
+	s += 1;		//error
 	*s = 'j';	//OK
 	//...
 	}
@@ -248,7 +248,7 @@ The value of the object to which the pointer points, however, is not constant, a
 ``` cpp
 int strlen( const char *const s )
 	{
-	s += 1;	//error
+	s += 1;		//error
 	*s = 'j';	//error
 	//...
 	}
