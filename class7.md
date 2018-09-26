@@ -48,8 +48,8 @@ There are two right ways to access the data inside a struct passed by pointer an
 double TriangleArea( Triangle *t )
 	{
 	( *t ).a + ...	// Deref the pointer to get the object
-	t->a + ...		// The most commonly-used notation
-	*t.a + ...		// Does not work, because the dot takes precedence over the dereference
+	t->a + ...	// The most commonly-used notation
+	*t.a + ...	// Does not work, because the dot takes precedence over the dereference
 	}
 ```
 
@@ -61,10 +61,10 @@ Given a pointer, there are two things you can make constant:
 2. The value of the object the pointer points to
 
 ``` cpp
-const T *p;			// "T" (the pointed-to object)
-						// cannot be changed
-T *const p;			// "p" (the pointer) cannot be
-						// changed
+const T *p;		// "T" (the pointed-to object)
+			// cannot be changed
+T *const p;		// "p" (the pointer) cannot be
+			// changed
 const T *const p;	// neither can be changed
 ```
 
