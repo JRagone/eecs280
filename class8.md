@@ -311,10 +311,10 @@ This is a new use of `const`, and it means "this member funciton promises not to
 We have now seen three uses of `const`:
 
 ``` cpp
-const int *p;			//the pointed-to object cannot change
-int *const p;			//the pointer cannot change
+const int *p;		//the pointed-to object cannot change
+int *const p;		//the pointer cannot change
 void area() const;	//member function cannot change
-						//member variables
+			//member variables
 ```
 
 ## Data abstraction
