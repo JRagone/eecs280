@@ -19,17 +19,17 @@ Class 9
 double Area( )
 	{
 	double s = ( this->A + this->B +
-					this->C )/2;
+			this->C )/2;
 	return sqrt(s * ( s - this->A )
-					 * ( s - this->B )
-					 * ( s - this->C ) );
+			* ( s - this->B )
+			* ( s - this->C ) );
 	}
 double Area( )
 	{
 	double s = ( A + B + C )/2;
 	return sqrt(s * ( s - A )
-					* ( s - B )
-					* ( s - C ) );
+			* ( s - B )
+			* ( s - C ) );
 	}
 ```
 
