@@ -1,4 +1,4 @@
-eecs280
+EECS 280 Notes Fall 2018
 =======
 By John Ragone
 
